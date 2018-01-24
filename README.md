@@ -3,7 +3,7 @@
 This repo is a reproduction of [issue 1085 for Hypothesis](https://github.com/HypothesisWorks/hypothesis-python/issues/1085).
 
 ## Details
-* Install requirements into a virtualenv or whatever you're using for dependency management via requirements.txt. This includes coverage, py.test, and hypothesis.
+* Install requirements into a virtualenv or whatever you're using for dependency management via requirements.txt. This includes `coverage`, `py.test`, and `hypothesis`.
 
 ### Source
 Take a peek inside of the source code (`repro_package`). You'll see there are two files:
@@ -21,7 +21,7 @@ Since the contents of `test_hypothesis.py` are commented out, if you run the fol
 
 ```bash
 $ coverage run --source repro_package/ -m pytest tests
-coverage report
+$ coverage report
 ```
 
 You get: 
@@ -74,4 +74,4 @@ repro_package/hit_by_unittest.py       2      0   100%
 TOTAL                                  2      0   100%
 ```
 
-And there you have it :).
+**And there you have it :).**
